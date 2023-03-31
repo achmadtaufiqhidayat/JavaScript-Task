@@ -1,11 +1,16 @@
-let jawaban = "";
+let soalJawaban = "";
 
-while (jawaban !== "Impact Byte") {
-  jawaban = prompt("Sebutkan kepanjangan dari nama IB (Impact Byte)?");
+document.getElementById("inpPlus").addEventListener("click", function(){
+    while (soalJawaban !== "Impact Byte") {
+        soalJawaban = prompt("Sebutkan kepanjangan dari nama IB?");
+      
+        if (soalJawaban === "Impact Byte") {
+          alert("Selamat, jawaban kamu benar!");
+        } else {
+          alert("Silakan coba lagi.");
+        }
+      }
 
-  if (jawaban === "Impact Byte") {
-    alert("Selamat, jawaban kamu benar!");
-  } else {
-    alert("Maaf, jawaban kamu salah. Silakan coba lagi.");
-  }
-}
+})
+
+

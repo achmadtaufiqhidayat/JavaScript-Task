@@ -1,9 +1,9 @@
 let jumlahKlik = 0;
-const iniKonfirmasi = "Apakah Anda ingin mengulang?";
+let iniKonfirmasi = "Apakah Anda ingin mengulang?";
 
 document.getElementById("btnPlus").addEventListener("click", function() {
   while (true) {
-    const konfirmasi = confirm(iniKonfirmasi);
+    let konfirmasi = confirm(iniKonfirmasi);
     if (konfirmasi) {
       jumlahKlik++;
     } else {
